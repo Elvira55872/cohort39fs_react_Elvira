@@ -1,5 +1,6 @@
 import "./App.css";
 
+
 // Lessons
 // import Lesson02 from "./lessons/lesson02/lesson02";
 
@@ -11,7 +12,7 @@ function App() {
     <div className="App">
       {/* <p>This is Elvira`s first react app</p> */}
       {/* <Lesson02 /> */}
-      <Homework02 />
+      <Homework02/>
     </div>
   );
 }
