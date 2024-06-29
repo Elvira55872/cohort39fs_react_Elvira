@@ -6,7 +6,7 @@ function Card() {
       <img
         src="https://i.pinimg.com/564x/ef/ea/19/efea19854801e1d60f3638ebd28c0000.jpg"
         alt="Homer Simpson"
-      ></img>
+      >
       <h1>Homer Simpson</h1>
       <p>
         {" "}
