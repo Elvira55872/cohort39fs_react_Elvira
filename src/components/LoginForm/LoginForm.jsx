@@ -23,14 +23,14 @@ function LoginForm() {
   };
 
   return (
-    <div className="login-form-wrapper">
+    <form className="login-form-wrapper">
       <h1>Login form</h1>
       <div className="login-fields-wrapper">
         <Input inputData={inputDataEmail} />
         <Input inputData={inputDataPassword} />
-        <Button buttonData={buttonDatas} />
       </div>
-    </div>
+      <Button buttonData={buttonDatas} />
+    </form>
   );
 }
 

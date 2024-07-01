@@ -1,12 +1,13 @@
 import "./styles.css";
 
 function Input({ inputData }) {
-  const { name, type, placeholder, label } = inputData;
+  const { id, name, type, placeholder, label } = inputData;
+  
   return (
-    <form className="input-container">
-      <label htmlFor={name}>{label}</label>
-      <input  name={name} type={type} placeholder={placeholder} />
-    </form>
+    <div className="input-container">
+      <label htmlFor={id}>{label}</label>
+      <input  id={id} name={name} type={type} placeholder={placeholder} />
+    </div>
   );
 }
 

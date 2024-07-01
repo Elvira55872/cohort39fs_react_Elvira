@@ -1,6 +1,7 @@
 .button-component {
   height: 70px;
-  width: 470px;
+  /* width: 470px; */
+  width: 100%;
   padding: 20px, 54px, 20px, 54px;
   border: none;
   background-color: #1F27F5;
