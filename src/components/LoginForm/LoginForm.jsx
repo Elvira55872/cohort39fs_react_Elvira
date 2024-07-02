@@ -17,9 +17,10 @@ function LoginForm() {
     label: "Password",
   };
 
-  const buttonDatas = {
-    name: "Login",
-    type: "submit",
+  const loginUser = (event) => {
+    event.preventDefault();
+    console.log(event);
+    console.log("user logged in succesfully");
   };
 
   return (
@@ -29,7 +30,7 @@ function LoginForm() {
         <Input inputData={inputDataEmail} />
         <Input inputData={inputDataPassword} />
       </div>
-      <Button buttonData={buttonDatas} />
+      <Button onClick={loginUser} name="Login" type="submit" />
     </form>
   );
 }

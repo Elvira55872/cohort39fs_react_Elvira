@@ -2,6 +2,7 @@ import "./App.css";
 
 // Lessons
 // import Lesson02 from "./lessons/lesson02/lesson02";
+import Lesson04 from "./lessons/lesson04/lesson04";
 
 //Homeworks
 // import Homework02 from "./homeworks/homework02/Homework02";
@@ -13,7 +14,8 @@ function App() {
       {/* <p>This is Elvira`s first react app</p> */}
       {/* <Lesson02 /> */}
       {/* <Homework02 /> */}
-      <Homework03 />
+      {/* <Homework03 /> */}
+      <Lesson04 />
     </div>
   );
 }

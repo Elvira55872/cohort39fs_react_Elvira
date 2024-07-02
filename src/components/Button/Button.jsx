@@ -1,10 +1,9 @@
 import "./styles.css";
 
-function Button({ buttonData }) {
-  const { name, type } = buttonData;
-  
+function Button({ name, type, onClick }) {
+
   return (
-    <button className="button-component" type={type}>
+    <button onClick={onClick} className="button-component" type={type}>
       {name}
     </button>
   );
