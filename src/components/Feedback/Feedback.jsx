@@ -3,38 +3,35 @@ import "./styles.css";
 import { useState } from "react";
 
 function Feedback() {
-  const [likes, onLike] = useState(0);
-  const [dislikes, onDislike] = useState(0);
+  const [likes, setLike] = useState(0);
+  const [dislikes, setDislike] = useState(0);
 
-  const like = () => {
-    onLike((prevValue) => {
+  const addLike = () => {
+    setLike((prevValue) => {
       return prevValue + 1;
     });
   };
 
-  const dislike = () => {
-    onDislike((prevValue) => {
+  const addDislike = () => {
+    setDislike((prevValue) => {
       return prevValue + 1;
     });
   };
 
   const clearLikesAndDislikes = () => {
-    onLike(0);
-    onDislike(0);
+    setLike(0);
+    setDislike(0);
   };
-
-  // console.log(typeof like);
-  // console.log(typeof dislike);
 
   return (
     <div className="feedback-container">
       <div className="button-counter-container">
-        <FeedbackButton type="button" img="like" onClick={like} />
+        <FeedbackButton type="button" img="like" onClick={addLike} />
         <p>{likes}</p>
       </div>
 
       <div className="button-counter-container">
-        <FeedbackButton type="button" img="dislike" onClick={dislike} />
+        <FeedbackButton type="button" img="dislike" onClick={addDislike} />
         <p>{dislikes}</p>
       </div>
       <FeedbackButton
