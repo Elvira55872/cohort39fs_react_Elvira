@@ -1,8 +1,6 @@
 import "./styles.css";
 
-function Input({ inputData }) {
-  const { id, name, type, placeholder, label } = inputData;
-  
+function Input({ id, name, type, placeholder, label }) {  
   return (
     <div className="input-container">
       <label htmlFor={id}>{label}</label>
